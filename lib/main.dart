@@ -131,14 +131,4 @@ class _WebViewExampleState extends State<WebViewExample> {
         });
   }
 
-  void _launchURL(String url) async {
-    try {
-      await launchUrl(
-        Uri.parse(url),
-      );
-    } catch (e) {
-      // An exception is thrown if browser app is not installed on Android device.
-      debugPrint(e.toString());
-    }
-  }
 }
